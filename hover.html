@@ -1,0 +1,56 @@
+      <!-- Hamburger X -->
+      <div>
+        <div class="k">
+          <div></div>
+          <div></div>
+        </div>
+        <span>Hamburger 1</span>
+      </div>
+
+      <!-- Styles for hamburger X -->
+      <style>
+      .k {
+        border: solid 4px red;
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        transition: 200ms;
+      }
+
+      .k > div {
+        width: 120px;
+        height: 20px;
+        background-color:red;
+        position: absolute;
+      } 
+
+      .k > div:nth-child(1) {
+        transform: translate(40px, 70px) rotate(0);
+        transition: 200ms;
+      }
+
+      .k > div:nth-child(2) {
+        transform: translate(40px, 110px) rotate(0);
+        transition: 200ms;
+      }
+
+      .k:hover {
+        background-color: yellow;
+        border: solid 4px orange;
+      }
+
+      .k:hover > div {
+        background-color: orange;
+      }
+
+      .k:hover > div:nth-child(1) {
+        transform: translate(40px, 100px) rotate(45deg);
+    
+      }
+
+      .k:hover > div:nth-child(2) {
+        transform: translate(40px, 100px) rotate(-45deg)
+      }
+
+
+      </style>
