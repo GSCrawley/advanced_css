@@ -1,0 +1,96 @@
+<div id="container">
+    <!-- #a -->
+    <div id="a"></div>
+  
+    <!-- #b -->
+    <div id="b">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  
+    <!-- #heart -->
+    <div id="heart">
+      <div></div>
+      <div></div>
+    </div>
+  
+     
+  </div>
+  
+  <style>
+  
+    #b {
+      width: 100px;
+      height: 100px;
+      border: 6px solid;
+      position: absolute;
+      transform: translate(120px, 100px);
+      overflow: hidden;
+    }
+  
+    #b > div:nth-child(1) {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: violet;
+      position: absolute;
+      transform: translate(-40px, -40px);
+    }
+  
+    #b > div:nth-child(2) {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #6495ed;
+      position: absolute;
+      transform: translate(60px, -40px);
+    }
+
+    #b > div:nth-child(3) {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: orange;
+      position: absolute;
+      transform: translate(-40px, 60px);
+    }
+  
+    #b > div:nth-child(4) {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color:yellowgreen;
+      position: absolute;
+      transform: translate(60px, 60px);
+    } 
+  
+    #heart {
+      position: absolute;
+      transform: translate(157.5px, 150px);
+      ;
+    }
+    
+    #heart > div:nth-child(2) {
+      width: 30px;
+      height: 20px;
+      position: absolute;
+      background-color: red;
+      border-radius: 20px 0 0 20px;
+      /* border: 3px solid;  */
+      transform: translate(4px, 0) rotate(135deg);
+    }
+  
+    #heart > div:nth-child(1) {
+      width: 30px;
+      height: 20px;
+      position: absolute;
+      background-color: red;
+      border-radius: 20px 0 0 20px;
+      /* border: 3px solid;  */
+      transform: translate(-4px, 0) rotate(45deg);
+    }
+  
+
+  </style>
