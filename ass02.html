@@ -22,75 +22,102 @@
   <style>
   
     #b {
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
       border: 6px solid;
       position: absolute;
-      transform: translate(120px, 100px);
+      transform: translate(240px, 200px);
       overflow: hidden;
     }
   
     #b > div:nth-child(1) {
-      width: 80px;
-      height: 80px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       background-color: violet;
       position: absolute;
-      transform: translate(-40px, -40px);
+      transform: translate(-80px, -80px);
     }
   
     #b > div:nth-child(2) {
-      width: 80px;
-      height: 80px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       background-color: #6495ed;
       position: absolute;
-      transform: translate(60px, -40px);
+      transform: translate(120px, -80px);
     }
 
     #b > div:nth-child(3) {
-      width: 80px;
-      height: 80px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       background-color: orange;
       position: absolute;
-      transform: translate(-40px, 60px);
+      transform: translate(-80px, 120px);
     }
   
     #b > div:nth-child(4) {
-      width: 80px;
-      height: 80px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       background-color:yellowgreen;
       position: absolute;
-      transform: translate(60px, 60px);
+      transform: translate(120px, 120px);
     } 
   
     #heart {
       position: absolute;
-      transform: translate(157.5px, 150px);
-      ;
+      transform: translate(315px, 300px);
     }
     
     #heart > div:nth-child(2) {
-      width: 30px;
-      height: 20px;
+      width: 60px;
+      height: 40px;
       position: absolute;
       background-color: red;
       border-radius: 20px 0 0 20px;
       /* border: 3px solid;  */
-      transform: translate(4px, 0) rotate(135deg);
+      transform: translate(8px, 0) rotate(135deg);
     }
   
     #heart > div:nth-child(1) {
-      width: 30px;
-      height: 20px;
+      width: 60px;
+      height: 40px;
       position: absolute;
       background-color: red;
       border-radius: 20px 0 0 20px;
-      /* border: 3px solid;  */
-      transform: translate(-4px, 0) rotate(45deg);
+      transform: translate(-8px, 0) rotate(45deg);
     }
   
+    #b:hover {
+      background-color: black
+    }
+
+    #b:hover > div:nth-child(1) {
+      background-color: yellowgreen
+    }
+
+    #b:hover > div:nth-child(2) {
+      background-color: orange
+    }
+
+    #b:hover > div:nth-child(3) {
+      background-color: #6495ed
+    }
+
+    #b:hover > div:nth-child(4) {
+      background-color: violet
+    }
+
+    /* #heart:hover > div:nth-child(1) {
+      background-color: white
+    }
+
+    #heart:hover > div:nth-child(2) {
+      background-color: white
+    } */
+
+
 
   </style>

@@ -7,6 +7,26 @@
         <span>Hamburger X</span>
       </div>
 
+    <!-- Hamburger X 2 -->
+    <div>
+      <div class="l">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <span>Hamburger X 2</span>
+    </div>
+
+    <!-- Hamburger X 3 -->
+    <div>
+      <div class="m">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <span>Hamburger 3</span>
+    </div>
+
       <!-- Styles for hamburger X -->
       <style>
       .k {
@@ -51,6 +71,119 @@
       .k:hover > div:nth-child(2) {
         transform: translate(40px, 100px) rotate(-45deg)
       }
-
-
       </style>
+
+      <!-- Styles for hamburger X2 -->
+
+    <style>
+      
+      .l {
+        border: solid 4px black;
+        width: 200px;
+        height: 200px;
+        transition: 200ms;
+      }
+      
+      .l > div {
+        width: 120px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+      }
+      
+      .l > div:nth-child(1) {
+        transform: translate(40px, 50px) rotate(0);
+        transition: 200ms;
+      }
+      
+      .l > div:nth-child(2) {
+        opacity: 1;
+        transform: scale(1, 1) translate(40px, 90px) rotate(0);
+        transition: 200ms;
+      }                                               
+      
+      .l > div:nth-child(3) {
+        transform: translate(40px, 130px) rotate(0);
+        transition: 200ms;                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+      }
+      
+      .l:hover {
+        background-color: black;
+      }
+      
+      .l:hover > div {
+        background-color: white;
+      } 
+     
+      .l:hover > div:nth-child(1) {
+        transform: translate(40px, 90px) rotate(45deg);
+      }
+    
+      .l:hover > div:nth-child(2) {
+        opacity: 0;
+        transform: scale(0, 1) translate(40px, 90px) rotate(0);
+      }
+      
+      .l:hover > div:nth-child(3) {
+        transform: translate(40px, 90px) rotate(-45deg);
+      }
+  
+    </style>
+
+    <!-- Styles for Hamburger X 3 -->
+    <style>
+      
+      .m {
+        border: solid 4px black;
+        width: 200px;
+        height: 200px;
+        transition: 200ms;
+      }
+      
+      .m > div {
+        width: 120px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+      }
+       
+      .m > div:nth-child(1) {
+        transform: translate(40px, 50px) rotate(0);
+        transition: 200ms;
+      }
+      
+      .m > div:nth-child(2) {
+        opacity: 1;
+        transform: scale(1, 1) translate(40px, 50px) rotate(0);
+        transition: 200ms;
+      }
+      
+      .m > div:nth-child(3) {
+        transform: translate(40px, 130px) rotate(0);
+        transition: 200ms;
+      }
+      
+      .m:hover {
+        background-color: black;
+      }
+      
+      .m:hover > div {
+        background-color: white;
+      }
+      
+      .m:hover > div:nth-child(1) {
+        width: 106px;
+        transform: translate(20px, 60px) rotate(-45deg);
+      }
+      
+      .m:hover > div:nth-child(2) {
+        transform: translate(40px, 90px) rotate(0);
+      }
+      
+      .m:hover >  div:nth-child(3) {
+        width: 106px;
+        transform: translate(20px, 120px) rotate(45deg);
+      }
+  
+    </style>
+  
