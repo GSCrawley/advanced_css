@@ -28,8 +28,25 @@
       position: absolute;
       transform: translate(240px, 200px);
       overflow: hidden;
+      animation: colorSwitch 5s infinite;
     }
-  
+    
+    @keyframes colorSwitch {
+      0% {
+        background-color: white;
+      }
+      25% {
+        background-color: black;
+      }
+      50% {
+        background-color: white;
+      }
+      75% {
+        background-color: black;
+      }
+
+    }
+
     #b > div:nth-child(1) {
       width: 160px;
       height: 160px;
@@ -37,8 +54,18 @@
       background-color: violet;
       position: absolute;
       transform: translate(-80px, -80px);
+      animation: colorSwitch1 2.5s infinite;
     }
-  
+
+    @keyframes colorSwitch1 {
+      0% {
+        background-color: violet;
+      }
+      50% {
+        background-color: yellowgreen;
+      }
+    }
+
     #b > div:nth-child(2) {
       width: 160px;
       height: 160px;
@@ -46,6 +73,16 @@
       background-color: #6495ed;
       position: absolute;
       transform: translate(120px, -80px);
+      animation: colorSwitch2 2.5s infinite;
+    }
+
+    @keyframes colorSwitch2 {
+      0% {
+      background-color: #6495ed
+    } 
+      50% {
+      background-color: orange;
+      }
     }
 
     #b > div:nth-child(3) {
@@ -55,8 +92,18 @@
       background-color: orange;
       position: absolute;
       transform: translate(-80px, 120px);
+      animation: colorSwitch3 2.5s infinite;
     }
   
+    @keyframes colorSwitch3 {
+      0% {
+        background-color: orange;
+    }
+      50% {
+        background-color: #6495ed;
+      }
+    }
+
     #b > div:nth-child(4) {
       width: 160px;
       height: 160px;
@@ -64,8 +111,18 @@
       background-color:yellowgreen;
       position: absolute;
       transform: translate(120px, 120px);
+      animation: colorSwitch4 2.5s infinite;
     } 
-  
+    
+    @keyframes colorSwitch4 {
+      0% {
+        background-color: yellowgreen;
+      }
+      50% {
+        background-color: violet;
+      }
+    }
+
     #heart {
       position: absolute;
       transform: translate(315px, 300px);
