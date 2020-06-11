@@ -1,11 +1,7 @@
 # advanced_css
 
-## run ass02.html for animated logo
+## run myCityLogo.html to see Assignment 4 - animate your drawing
 
-### hover over logo to see animation
-
-![alt text](ass02.html)
-
-![alt text](myCity.png)
+![alt text](myCityLogo.html)
 
 ![alt text](css1.png)
