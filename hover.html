@@ -3,13 +3,14 @@
         <div class="k">
           <div></div>
           <div></div>
+          <div></div>
         </div>
         <span>Hamburger X</span>
       </div>
 
     <!-- Hamburger X 2 -->
     <div>
-      <div class="l">
+      <div class="n">
         <div></div>
         <div></div>
         <div></div>
@@ -123,12 +124,18 @@
       } 
 
       .k > div:nth-child(1) {
-        transform: translate(40px, 70px) rotate(0);
+        transform: translate(40px, 50px) rotate(0);
         transition: 200ms;
       }
 
       .k > div:nth-child(2) {
-        transform: translate(40px, 110px) rotate(0);
+        opacity: 1;
+        transform: scale(1,1) translate(40px, 90px) rotate(0);
+        transition: 200ms;
+      }
+
+      .k > div:nth-child(3) {
+        transform: translate(40px, 130px) rotate(0);
         transition: 200ms;
       }
 
@@ -142,70 +149,83 @@
       }
 
       .k:hover > div:nth-child(1) {
-        transform: translate(40px, 100px) rotate(45deg);
+        transform: translate(40px, 90px) rotate(45deg);
     
       }
 
       .k:hover > div:nth-child(2) {
-        transform: translate(40px, 100px) rotate(-45deg)
+        opacity: 0;
+        transform: scale(0,1) translate(40px, 90px) rotate(0);
+      }
+
+      .k:hover > div:nth-child(3) {
+        transform: translate(40px, 90px) rotate(-45deg);
       }
       </style>
 
       <!-- Styles for hamburger X2 -->
-
     <style>
       
-      .l {
-        border: solid 4px black;
+      .n {
+        border: solid 2px black;
         width: 200px;
         height: 200px;
         transition: 200ms;
       }
       
-      .l > div {
+      .n>div {
         width: 120px;
         height: 20px;
         background-color: black;
         position: absolute;
       }
       
-      .l > div:nth-child(1) {
+      .n>div:nth-child(1) {
         transform: translate(40px, 50px) rotate(0);
         transition: 200ms;
       }
       
-      .l > div:nth-child(2) {
-        opacity: 1;
-        transform: scale(1, 1) translate(40px, 90px) rotate(0);
+      .n>div:nth-child(2) {
+        border: none;
+        border-radius: 0;
+        transform: translate(40px, 90px);
         transition: 200ms;
-      }                                               
-      
-      .l > div:nth-child(3) {
-        transform: translate(40px, 130px) rotate(0);
-        transition: 200ms;                                                                                                                                                                                                                                                                                                                                                                                                                                                      
       }
       
-      .l:hover {
+      .n>div:nth-child(3) {
+        transform: translate(40px, 130px) rotate(0);
+        transition: 200ms;
+      }
+      
+      .n:hover {
         background-color: black;
       }
       
-      .l:hover > div {
+      .n:hover>div {
         background-color: white;
-      } 
-     
-      .l:hover > div:nth-child(1) {
-        transform: translate(40px, 90px) rotate(45deg);
-      }
-    
-      .l:hover > div:nth-child(2) {
-        opacity: 0;
-        transform: scale(0, 1) translate(40px, 90px) rotate(0);
       }
       
-      .l:hover > div:nth-child(3) {
-        transform: translate(40px, 90px) rotate(-45deg);
+      .n:hover>div:nth-child(1) {
+        width: 100px;
+        transform: translate(50px, 90px) rotate(45deg);
+      }
+      /* This div changes from a bar to circle */
+      
+      .n:hover>div:nth-child(2) {
+        width: 120px;
+        height: 120px;
+        background-color: transparent;
+        border: 20px solid white;
+        border-radius: 50%;
+        transform: translate(20px, 20px);
+      }
+      
+      .n:hover>div:nth-child(3) {
+        width: 100px;
+        transform: translate(50px, 90px) rotate(-45deg);
       }
   
+    
     </style>
 
     <!-- Styles for Hamburger X 3 -->
@@ -252,7 +272,7 @@
       }
       
       .m:hover > div:nth-child(1) {
-        width: 106px;
+        width: 100px;
         transform: translate(20px, 60px) rotate(-45deg);
       }
       
