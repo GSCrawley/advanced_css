@@ -1,0 +1,375 @@
+$border-size: 2px;
+$padding-size: 2rem; 
+$bg-color1: #008fbe;
+$color1: #fff;
+$margin: 10px;
+$font-size: 40px;
+$transition-speed: 200ms;
+$color2: gold;
+$color3: red;
+$color4: orange;
+$color6: yellowgreen;
+$bg-color3: blue;
+$bg-color4: yellow;
+$bg-color5: black;
+$bg-color6: orangered;
+$size: 200px;
+$rotate: 45deg;
+$x: 40px;
+$y: 90px;
+
+.button-1 {
+  padding: $padding-size;
+  border-radius: $margin + 6;
+  background-color: $bg-color1;
+  color: $color1;
+  border: $border-size solid;
+  font-size: $font-size;
+  transition: $transition-speed + 150;
+}
+
+.button-1:hover {
+  color: $bg-color1;
+  background-color: $color1;
+}
+
+.button-2 {
+  padding: $padding-size;
+  margin: $margin + 6;
+  color: $color2;
+  border: none;
+  border-top: ($border-size * 4) solid transparent;
+  border-bottom: ($border-size * 4) solid transparent;
+  font-size: $font-size;
+  background-color: $color1;
+  transition: $transition-speed + 100;
+}
+
+.button-2:hover {
+  border-top: ($border-size * 4) solid $color2;
+  border-bottom: ($border-size * 4) solid $color2;
+  letter-spacing: 0.5rem;
+}
+
+.k {
+  border: solid ($border-size * 2) $color3;
+  background-color: $bg-color3;
+  width: $size;
+  height: $size;
+  transition: $transition-speed;
+}
+
+.k > div {
+  width: ($size - 80);
+  height: ($size - 180);
+  background-color: $color3;
+  position: absolute;
+}
+
+.k > div:nth-child(1) {
+  transform: translate($x, ($y - $x)) rotate(0);
+  transition: $transition-speed;
+}
+
+.k > div:nth-child(2) {
+  opacity: 1;
+  transform: scale(1, 1) translate($x, $y) rotate(0);
+  transition: $transition-speed;
+}
+
+.k > div:nth-child(3) {
+  transform: translate($x, ($y + $x)) rotate(0);
+  transition: $transition-speed;
+}
+
+.k:hover {
+  background-color: $bg-color4;
+  border: solid ($border-size * 2) $color4;
+}
+
+.k:hover > div {
+  background-color: $color4;
+}
+
+.k:hover > div:nth-child(1) {
+  transform: translate($x, $y) rotate($rotate);
+}
+
+.k:hover > div:nth-child(2) {
+  opacity: 0;
+  transform: scale(0, 1) translate($x, $y) rotate(0);
+}
+
+.k:hover > div:nth-child(3) {
+  transform: translate($x, $y) rotate($rotate * -1);
+}
+
+.n {
+  border: solid ($border-size * 2) $bg-color5;
+  width: $size;
+  height: $size;
+  transition: $transition-speed;
+}
+
+.n > div {
+  width: $size - 80;
+  height: $size - 180;
+  background-color: $bg-color5;
+  position: absolute;
+}
+
+.n > div:nth-child(1) {
+  transform: translate($x, ($y - $x)) rotate(0);
+  transition: $transition-speed;
+}
+
+.n > div:nth-child(2) {
+  border: none;
+  border-radius: 0;
+  transform: translate($x, $y);
+  transition: $transition-speed;
+}
+
+.n > div:nth-child(3) {
+  transform: translate($x, ($y + $x)) rotate(0);
+  transition: $transition-speed;
+}
+
+.n:hover {
+  background-color: $bg-color5;
+}
+
+.n:hover > div {
+  background-color: $color1;
+}
+
+.n:hover > div:nth-child(1) {
+  width: $size / 2;
+  transform: translate(($y - $x), $y) rotate($rotate);
+}
+
+/* This div changes from a bar to circle */
+.n:hover > div:nth-child(2) {
+  width: $size -80;
+  height: $size - 80;
+  background-color: transparent;
+  border: ($border-size * 10) solid $color1;
+  border-radius: 50%;
+  transform: translate(($x/2), ($x/2));
+}
+
+.n:hover > div:nth-child(3) {
+  width: $size / 2;
+  transform: translate(($y - $x), $y) rotate($rotate * -1);
+}
+
+.m {
+  border: solid ($border-size * 2) $bg-color3;
+  background-color: $color3;
+  width: $size;
+  height: $size;
+  transition: $transition-speed;
+}
+
+.m > div {
+  width: $size - 80;
+  height: $size - 180;
+  background-color: $bg-color3;
+  position: absolute;
+}
+
+.m > div:nth-child(1) {
+  transform: translate($x, ($y - $x)) rotate(0);
+  transition: $transition-speed;
+}
+
+.m > div:nth-child(2) {
+  opacity: 1;
+  transform: translate($x, $y) rotate(0);
+  transition: $transition-speed;
+}
+
+.m > div:nth-child(3) {
+  transform: translate($x, ($y + $x)) rotate(0);
+  transition: $transition-speed;
+}
+
+.m:hover {
+  border: solid ($border-size * 2) $bg-color4;
+  background-color: $color4;
+}
+
+.m:hover > div {
+  background-color: $bg-color4;
+}
+
+.m:hover > div:nth-child(1) {
+  width: $size / 2;
+  transform: translate(($x / 2), ($y - 30)) rotate($rotate * -1);
+}
+
+.m:hover > div:nth-child(2) {
+  width: $size - 94;
+  transform: scale(1, 1) translate($x, $y) rotate(0);
+}
+
+.m:hover > div:nth-child(3) {
+  width: $size - 94;
+  transform: translate(($x / 2), ($y + 30)) rotate($rotate);
+}
+
+.e {
+  width: $size;
+  height: $size - 120;
+  position: relative;
+  overflow: hidden;
+  border: ($border-size * 2) solid $color6;
+  cursor: pointer;
+}
+
+.e > div {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  text-align: center;
+  line-height: $font-size * 2;
+  left: 0;
+  top: 0;
+  transition: $transition-speed;
+}
+
+.e:hover > div {
+  top: (($size - 120px) * -1);
+}
+
+.e > div > div:first-child {
+  color: $color6;
+  background-color: $bg-color6;
+}
+
+.e > div > div:last-child {
+  color: $bg-color6;
+  background-color: $color6;
+}
+
+.box-6 {
+  width: $size * 2;
+  height: $size * 2;
+  border: $border-size solid;
+  overflow: hidden;
+  position: relative;
+  margin: $margin;
+}
+
+.box-6 > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: $transition-speed * 2;
+}
+
+.box-6:hover > img {
+  transform: translate(-50%, -50%) scale(1.5) rotate($rotate - 33);
+}
+
+
+
+.box-7 {
+  width: $size * 2;
+  height: $size * 2;
+  border: $border-size solid;
+  overflow: hidden;
+  position: relative;
+  margin: $margin;
+}
+
+.box-7 > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: $transition-speed * 2;
+}
+
+.box-7:hover > img {
+  transform: translate(-50%, -50%) scale(1.5) rotate($rotate - 33);
+}
+
+.box-7 > h3 {
+  position: absolute;
+  right: (($size - 50) * -1);
+  bottom: 0;
+  background-color: $color1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%, 10% 49%);
+  transition: $transition-speed * 2;
+  transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+}
+
+.box-7:hover > h3 {
+  right: ($margin * -1);
+}
+
+.box-8 {
+  width: $size * 2;
+  height: $size * 2;
+  border: $border-size solid;
+  overflow: hidden;
+  position: relative;
+  margin: $margin;
+}
+
+.box-8 > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: $transition-speed * 2;
+}
+
+.box-8:hover > img {
+  transform: translate(-50%, -50%) scale(1.5) rotate($rotate - 33);
+}
+
+.box-8 > h3 {
+  position: absolute;
+  right: ($size * -1);
+  bottom: 0;
+  background-color: $color1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%, 10% 49%);
+  transition: $transition-speed * 3;
+  transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+}
+
+.box-8:hover > h3 {
+  right: ($margin * -1);
+}
+
+.box-8 > p {
+  width: $size / 2;
+  height: $size /2;
+  border-radius: 50%;
+  position: absolute;
+  left: (($margin + 4) * -1);
+  top: (($margin + 4) * -1);
+  background-color: $bg-color6;
+  color: $color1;
+  font-size: (($font-size / 2) + 4);
+  line-height: $size / 2;
+  margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: $transition-speed * 3;
+  transition-timing-function: ease-in-out;
+  transition-delay: $transition-speed / 2;
+  transform: translate(-100px, -100px) scale(0.5);
+}
+
+.box-8:hover > p {
+  transform: translate(0, 0) scale(1);
+}
+
